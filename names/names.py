@@ -67,6 +67,23 @@ duplicates = []  # Return the list of duplicates in this data structure
 # Replace the nested for loops below with your improvements
 bst = BSTNode("")
 
+
+# <------STRETCH------->
+# Set and Intersect
+# I believe this is O(1)
+# runtime: 0.004808902740478516 seconds
+# duplicates = list(set(names_1).intersection(set(names_2)))
+
+# <------STRETCH------->
+# List comprehension
+# I believe this is O(log n)
+# runtime: 1.2950398921966553 seconds
+# duplicates = [name for name in names_1 if name in names_2]
+
+
+# Binary Search Tree
+# I believe this is O(n)
+# runtime: 0.1267399787902832 seconds
 for name in names_1:
     bst.insert(name)
 
